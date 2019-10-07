@@ -37,13 +37,13 @@ img {
 }
 
 body {
-	cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'),
+	cursor: url('../assets/default.cur.png'),
 		auto !important;
 }
 
 img,
 a {
-	cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/pointer.cur'),
+	cursor: url('../assets//pointer.cur.png'),
 		auto !important;
 }
 
