@@ -50,19 +50,6 @@ function getMoveDirection(startx, starty, endx, endy) {
 	return DIRECTIONS.UNDIRECTED
 }
 
-function loadIntro() {
-	if (document[hiddenProperty] || loadIntro.loaded) {
-		return
-	}
-	$('.wrap').classList.add('in')
-	setTimeout(() => {
-		$('.content-subtitle').innerHTML = `<span>${[...subtitle].join(
-			'</span><span>'
-		)}</span>`
-	}, 300)
-	loadIntro.loaded = true
-}
-
 function switchPage() {
 	if (switchPage.switched) {
 		return
@@ -256,51 +243,4 @@ function loadMain() {
 	loadMain.loaded = true
 }
 
-function loadAll() {
-	if (loadAll.loaded) {
-		return
-	}
-	switchPage()
-	loadMain()
-	loadAll.loaded = true
-}
-
-window.visibilityChangeEvent = hiddenProperty.replace(
-	/hidden/i,
-	'visibilitychange'
-)
-window.addEventListener(visibilityChangeEvent, loadIntro)
-window.addEventListener('DOMContentLoaded', loadIntro)
-
-const enterEl = $('.enter')
-enterEl.addEventListener('click', loadAll)
-enterEl.addEventListener('touchenter', loadAll)
-
-document.body.addEventListener('mousewheel', loadAll, { passive: true })
-$('.arrow').addEventListener('mouseenter', loadAll)
-
-if (isPhone) {
-	document.addEventListener(
-		'touchstart',
-		function(e) {
-			window.startx = e.touches[0].pageX
-			window.starty = e.touches[0].pageY
-		},
-		{ passive: true }
-	)
-	document.addEventListener(
-		'touchend',
-		function(e) {
-			let endx, endy
-			endx = e.changedTouches[0].pageX
-			endy = e.changedTouches[0].pageY
-
-			const direction = getMoveDirection(startx, starty, endx, endy)
-			if (direction !== DIRECTIONS.UP) {
-				return
-			}
-			loadAll()
-		},
-		{ passive: true }
-	)
-}
+loadMain();
