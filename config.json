@@ -1,20 +1,20 @@
 {
 	"head": {
-		"title": "一个坏掉的番茄",
-		"description": "Author:SimonMa,Category:Personal Blog",
+		"title": "碎碎酱",
+		"description": "碎碎酱的个人主页",
 		"favicon": "favicon.ico"
 	},
 	"intro": {
-		"title": "Simon Ma",
-		"subtitle": "Front back left right end engineer",
+		"title": "碎碎酱",
+		"subtitle": "Web Developer",
 		"enter": "enter",
-		"supportAuthor": true
+		"supportAuthor": false
 	},
 	"main": {
-		"name": "Simon Ma",
-		"signature": "Code & Input & Output",
+		"name": "碎碎酱",
+		"signature": "fiora开源聊天室作者",
 		"avatar": {
-			"link": "assets/avatar.jpg",
+			"link": "https://avatars3.githubusercontent.com/u/6939365?s=460&v=4",
 			"height": "80",
 			"width": "80"
 		},
