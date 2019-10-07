@@ -68,7 +68,7 @@
 		height: 200px;
 		overflow: hidden;
 		line-height: 200px;
-		background-color: #888;
+		background-color: #999;
 		text-align: center;
 		font-size: 4rem;
 		transition: background-color ease 0.3s, top ease 0.5s, left ease 0.5s,
@@ -152,10 +152,12 @@
 	background-color: #595;
 }
 
-#quarter-first:hover img {
-	display: block;
-	top: 0;
-	opacity: 1;
+#quarter-first:hover {
+	background-color: #90E;
+}
+
+#quarter-second:hover {
+	background-color: #EB144C;
 }
 
 #quarter-third:hover {
@@ -174,6 +176,10 @@ li#quarter-fourth:hover i {
 
 li#quarter-first span {
 	top: 0;
+}
+
+.iconfont {
+	font-size: inherit;
 }
 
 @media (min-width: 801px) {
@@ -198,11 +204,11 @@ li#quarter-first span {
 		top: 0;
 	}
 	#quarter-first {
-		left: 630px;
-		top: 0;
+		left: 420px;
+		top: 105px;
 	}
 	#quarter-second {
-		left: 420px;
+		left: 525px;
 		top: 105px;
 	}
 	#quarter-third {
@@ -336,11 +342,11 @@ li#quarter-first span {
 		top: 51%;
 	}
 	#quarter-first {
-		left: 51%;
+		left: 0;
 		top: 76.5%;
 	}
 	#quarter-second {
-		left: 0;
+		left: 25.5%;
 		top: 76.5%;
 	}
 	#quarter-third {

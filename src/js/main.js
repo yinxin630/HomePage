@@ -50,51 +50,8 @@ function getMoveDirection(startx, starty, endx, endy) {
 	return DIRECTIONS.UNDIRECTED
 }
 
-function switchPage() {
-	if (switchPage.switched) {
-		return
-	}
-	const DOM = {
-		intro: $('.content-intro'),
-		path: $('.shape-wrap path'),
-		shape: $('svg.shape')
-	}
-	DOM.shape.style.transformOrigin = '50% 0%'
-
-	anime({
-		targets: DOM.intro,
-		duration: 1100,
-		easing: 'easeInOutSine',
-		translateY: '-200vh'
-	})
-
-	anime({
-		targets: DOM.shape,
-		scaleY: [
-			{
-				value: [0.8, 1.8],
-				duration: 550,
-				easing: 'easeInQuad'
-			},
-			{
-				value: 1,
-				duration: 550,
-				easing: 'easeOutQuad'
-			}
-		]
-	})
-
-	anime({
-		targets: DOM.path,
-		duration: 1100,
-		easing: 'easeOutQuad',
-		d: DOM.path.getAttribute('pathdata:id')
-	})
-
-	switchPage.switched = true
-}
-
 const signatureEl = $('#signature')
+const maxAlpha = 0.7;
 function getDayLight() {
 	let time = new Date()
 	let hour = time.getHours() - 12
@@ -102,12 +59,11 @@ function getDayLight() {
 	hour = hour + (time.getMinutes() * 60 + time.getSeconds()) / 3600
 
 	const result = (hour / 4 - factor) * factor
-	return Math.min(1, Math.max(result, 0))
+	return Math.min(maxAlpha, Math.max(result, 0))
 }
 
 function setLightColor() {
 	$('#page').style.backgroundColor = `rgba(85,85,85,${getDayLight()})`
-	new Date().getHours() < 17 && (signatureEl.style.color = '#666')
 }
 
 function typeSignature() {
