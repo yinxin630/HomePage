@@ -193,7 +193,6 @@ function loadMain() {
 	}
 	setLightColor()
 	setTimeout(() => {
-		$('.card-inner').classList.add('in')
 		new messenger(signatureEl)
 	}, 400)
 	loadMain.loaded = true
