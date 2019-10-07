@@ -200,3 +200,5 @@ function loadMain() {
 }
 
 loadMain();
+
+$('#qq').setAttribute('href', window.isPhone ? 'mqqwpa://im/chat?chat_type=wpa&uin=1095276799&version=1&src_type=web&web_src=oicqzone.com' : 'tencent://message/?uin=1095276799')
