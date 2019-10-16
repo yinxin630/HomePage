@@ -159,6 +159,10 @@
 	background-color: #d81;
 }
 
+#whole-third:hover {
+	background-color: #333;
+}
+
 #quarter-second:hover {
 	background-color: #333;
 }
@@ -197,11 +201,11 @@ li#quarter-first span {
 	font-size: inherit;
 }
 
-@media (min-width: 801px) {
+@media (min-width: 901px) {
 	#card {
-		width: 725px;
+		width: 830px;
 		ul {
-			width: 725px;
+			width: 830px;
 			height: 200px;
 			transition: width ease 0.5s;
 		}
@@ -214,45 +218,45 @@ li#quarter-first span {
 		left: 210px;
 		top: 0;
 	}
-	#half-first {
+	#whole-third {
 		left: 420px;
 		top: 0;
 	}
+	#half-first {
+		left: 630px;
+		top: 0;
+	}
 	#quarter-first {
-		left: 420px;
+		left: 630px;
 		top: 105px;
 	}
 	#quarter-second {
-		left: 525px;
-		top: 105px;
-	}
-	#quarter-third {
-		left: 525px;
-		top: 105px;
-	}
-	#quarter-fourth {
-		left: 630px;
+		left: 735px;
 		top: 105px;
 	}
 }
 
-@media (min-width: 641px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 900px) {
 	#card,
 	#card ul {
 		transition: width ease 0.5s;
 	}
 }
 
-@media (min-width: 551px) and (max-width: 800px) {
+@media (min-width: 651px) and (max-width: 900px) {
 	#card {
-		width: 515px;
+		width: 620px;
 		ul {
-			width: 515px;
+			width: 620px;
 			height: 305px;
 		}
 	}
 	#whole-second {
 		left: 210px;
+		top: 0;
+	}
+	#whole-third {
+		left: 420px;
 		top: 0;
 	}
 	#card li#half-first {
@@ -266,50 +270,7 @@ li#quarter-first span {
 	}
 	#quarter-second {
 		left: 420px;
-		top: 0;
-	}
-	#quarter-third {
-		left: 420px;
-		top: 105px;
-	}
-	#quarter-fourth {
-		left: 420px;
 		top: 210px;
-	}
-}
-
-@media (min-width: 451px) and (max-width: 550px) {
-	#card {
-		width: 410px;
-		ul {
-			width: 410px;
-			height: 410px;
-		}
-	}
-	#whole-second {
-		left: 210px;
-		top: 0;
-	}
-	#card li#half-first {
-		left: 0;
-		top: 210px;
-		width: 410px;
-	}
-	#quarter-first {
-		left: 210px;
-		top: 315px;
-	}
-	#quarter-second {
-		left: 0;
-		top: 315px;
-	}
-	#quarter-third {
-		left: 105px;
-		top: 315px;
-	}
-	#quarter-fourth {
-		left: 315px;
-		top: 315px;
 	}
 }
 
@@ -320,7 +281,7 @@ li#quarter-first span {
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
 	#card {
 		width: 100%;
 		height: 100%;
@@ -335,7 +296,7 @@ li#quarter-first span {
 			height: 49%;
 		}
 		li#half-first {
-			width: 100%;
+			width: 49%;
 			height: 23.5%;
 		}
 		li.quarter {
@@ -352,23 +313,19 @@ li#quarter-first span {
 		left: 51%;
 		top: 0;
 	}
-	#card li#half-first {
+	#whole-third {
 		left: 0;
 		top: 51%;
 	}
+	#card li#half-first {
+		left: 51%;
+		top: 51%;
+	}
 	#quarter-first {
-		left: 0;
+		left: 51%;
 		top: 76.5%;
 	}
 	#quarter-second {
-		left: 25.5%;
-		top: 76.5%;
-	}
-	#quarter-third {
-		left: 25.5%;
-		top: 76.5%;
-	}
-	#quarter-fourth {
 		left: 76.5%;
 		top: 76.5%;
 	}

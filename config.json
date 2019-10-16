@@ -14,14 +14,19 @@
 		},
 		"ul": {
 			"whole_first": {
-				"href": "https://github.com/yinxin630/blog/blob/master/readme.md#%E7%A2%8E%E7%A2%8E%E9%85%B1%E7%9A%84%E5%8D%9A%E5%AE%A2",
-				"icon": "blog",
-				"text": "Blog"
+				"href": "https://fiora.suisuijiang.com/",
+				"icon": "chat",
+				"text": "Fiora"
 			},
 			"whole_second": {
 				"href": "https://github.com/yinxin630",
 				"icon": "github",
 				"text": "Github"
+			},
+			"whole_third": {
+				"href": "https://github.com/yinxin630/blog/blob/master/readme.md#%E7%A2%8E%E7%A2%8E%E9%85%B1%E7%9A%84%E5%8D%9A%E5%AE%A2",
+				"icon": "blog",
+				"text": "Blog"
 			},
 			"half_first": {
 				"href": "https://hacknical.com/resume/BJuxT2LjPtZ?locale=zh",

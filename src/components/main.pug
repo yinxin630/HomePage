@@ -7,7 +7,7 @@
 					h1(data-translate="name") #{main.name}
 					h2#signature(data-translate="signature" original-content=`${main.signature}`)
 
-				- const { whole_first , whole_second , half_first , quarter_first , quarter_second , quarter_third , quarter_fourth } = main.ul
+				- const { whole_first , whole_second , whole_third, half_first , quarter_first , quarter_second , quarter_third , quarter_fourth } = main.ul
 
 				ul
 					li#whole-first
@@ -19,6 +19,11 @@
 						a(href=`${whole_second.href}` aria-label=`${whole_second.text}` target="_blank")
 							i(class=`iconfont icon-${whole_second.icon}`)
 							span(data-translate=`${whole_second.text}`) #{whole_second.text}
+
+					li#whole-third
+						a(href=`${whole_third.href}` aria-label=`${whole_third.text}` target="_blank")
+							i(class=`iconfont icon-${whole_third.icon}`)
+							span(data-translate=`${whole_third.text}`) #{whole_third.text}
 
 					li#half-first
 						a(href=`${half_first.href}` aria-label=`${half_first.text}` target="_blank")
@@ -34,12 +39,3 @@
 						a(id="qq" rel="noopener" aria-label=`${quarter_second.text}`)
 							i(class=`iconfont icon-${quarter_second.icon}`)
 							span(data-translate=`${quarter_second.text}`) #{quarter_second.text}
-
-					//- li#quarter-third.quarter
-					//- 	a(href=`${quarter_third.href}` target="_blank" rel="noopener" aria-label=`${quarter_third.text}`)
-					//- 		i(class=`icon icon-${quarter_third.icon}`)
-					//- 		span(data-translate=`${quarter_third.text}`) #{quarter_third.text}
-
-					//- li#quarter-fourth.quarter
-					//- 	a(href=`${quarter_fourth.href}` aria-label=`${quarter_fourth.text}`)
-					//- 		i(class=`icon icon-${quarter_fourth.icon}`)
