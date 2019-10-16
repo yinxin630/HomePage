@@ -201,7 +201,7 @@ li#quarter-first span {
 	font-size: inherit;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
 	#card {
 		width: 830px;
 		ul {
@@ -236,14 +236,14 @@ li#quarter-first span {
 	}
 }
 
-@media (min-width: 641px) and (max-width: 900px) {
+@media (min-width: 641px) and (max-width: 1100px) {
 	#card,
 	#card ul {
 		transition: width ease 0.5s;
 	}
 }
 
-@media (min-width: 651px) and (max-width: 900px) {
+@media (min-width: 651px) and (max-width: 1100px) {
 	#card {
 		width: 620px;
 		ul {
@@ -274,7 +274,7 @@ li#quarter-first span {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 	#card,
 	#card ul {
 		transition: none;
